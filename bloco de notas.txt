@@ -1,0 +1,19 @@
+
+2- o que é auto_increment no banco de dados? (1- utilizada para gerar automaticamente valores numéricos para uma coluna
+resposta correta: 1
+
+4- o que é uma rede wireless? 2- é uma rede de comunicação sem fio que utiliza ondas de rádio, 
+ resposta correta: 2
+
+
+6-quais os três tipos de "SQL" (1- tipos numéricos, tipos de texto e tipo lógico. 
+ resposta correta: 1
+
+8- qual é a diferença entre banco de dados relacionados e não relacionados? 2- relacionais organizam dados em tabelas com relações e os não-relacionais armazenam dados de uma forma mais flexível sem uma estrutura fixa,
+ resposta correta: 2
+
+9- para que serve <div> em HTML?  3- serve para agrupar elementos e estruturar  o conteúdo da pagina, 
+resposta correta: 3
+
+10- para que serve ipconfig no prompt de comando (cmd)?  4- é usado para exibir informações sobre a configuração de rede) 
+resposta correta: 4

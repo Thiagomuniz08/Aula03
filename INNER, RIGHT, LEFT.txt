@@ -1,0 +1,32 @@
+1-SELECT lv.titulo , at.nome
+from livros as lv 
+INNER JOIN autores as at ON lv.id_autor = AT.id_autor;
+
+2- SELECT autores.nome
+from autores = autores
+INNER JOIN livros ON autores.id_autor ;
+
+3-SELECT lv.titulo , at.nome, lv.preco
+from livros as lv 
+LEFT JOIN autores as at ON lv.id_autor = AT.id_autor;
+
+4-SELECT LV.titulo, lv.preco 
+FROM livros AS LV
+LEFT JOIN livros ON LV.titulo 
+WHERE lv.preco > 30.00;
+
+5-SELECT lv.titulo , at.nome
+from livros as lv 
+INNER JOIN autores as at ON lv.id_autor = AT.id_autor;
+
+6-SELECT autores.nome AS autor, COUNT(livros.id_livro) AS total_de_livros
+FROM autores
+LEFT JOIN livros ON autores.id_autor = livros.id_autor
+GROUP BY autores.id_autor;
+
+7-SELECT titulo
+FROM livros
+WHERE titulo LIKE '%the%';
+
+8-SELECT AVG(preco) AS media_precos
+FROM livros;

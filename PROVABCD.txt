@@ -1,0 +1,58 @@
+CREATE TABLE Motorista (
+  ID_Motorista int(11) NOT NULL,
+  Nome varchar(255) NOT NULL,
+  CNH varchar(25) NOT NULL,
+  Telefone varchar(15) 
+);
+
+INSERT INTO motorista (ID_Motorista, Nome, CNH, Telefone) VALUES
+(1, 'João Silva', '12345678900', '(11) 91234-5678'),
+(2, 'Maria Oliveira', '98765432100', '(21) 99876-5432'),
+(3, 'Carlos Santos', '45678912300', '(31) 93456-7890'),
+(4, 'Ana Costa', '32165498700', '(41) 91234-0987'),
+(5, 'Fernanda Lima', '65432178900', '(51) 92345-6789');
+
+
+CREATE TABLE Viagem (
+  ID_Viagem int(11) NOT NULL,
+  Data_Viagem date NOT NULL,
+  OrigemDestino varchar(100) NOT NULL,
+  Horario_Saida time NOT NULL,
+  Horario_Chegada time NOT NULL,
+  ID_Motorista int(11),
+  ID_Ônibus int(11) 
+);
+
+INSERT INTO viagem (ID_Viagem, Data_Viagem, OrigemDestino, Horario_Saida, Horario_Chegada, `ID_Motorista`, `ID_Ônibus`) VALUES
+(1, '2024-11-01', 'São Paulo - Rio de Janeiro', '08:00:00', '12:00:00', 1, 1),
+(2, '2024-11-02', 'Belo Horizonte - Brasília', '09:00:00', '13:30:00', 2, 2),
+(3, '2024-11-03', 'Curitiba - Porto Alegre', '10:30:00', '15:00:00', 3, 3),
+(4, '2024-11-04', 'Salvador - Recife', '11:15:00', '16:00:00', 4, 4),
+(5, '2024-11-05', 'Fortaleza - Natal', '07:45:00', '10:30:00', 5, 5);
+
+
+CREATE TABLE Onibus (
+  ID_Ônibus int(11) NOT NULL,
+  Placa varchar(10) NOT NULL,
+  Modelo varchar(50) NOT NULL,
+  Capacidade int(11) NOT NULL,
+  Ano_Fabricacao int(11) NOT NULL
+);
+
+INSERT INTO Onibus (ID_Onibus, Placa, Modelo, Capacidade, Ano_Fabricacao) VALUES
+(1, 'ABC1D23', 'Marcopolo G7', 45, 2020),
+(2, 'DEF4G56', 'Volvo B9R', 50, 2019),
+(3, 'GHI7H89', 'Mercedes-Benz O500', 47, 2021),
+(4, 'JKL0M12', 'Comil Campione', 55, 2018),
+(5, 'MNO3P45', 'Iveco Paradiso', 48, 2022);
+
+
+SELECT Nome, CNH, Telefone 
+FROM Motorista;
+
+SELECT * 
+FROM Viagem 
+ORDER BY Data_Viagem DESC;
+
+SELECT * 
+FROM Ônibus;
